@@ -3,12 +3,254 @@
   <head>
     <title>NewPortfolio</title>
     <%= csrf_meta_tags %>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <script src="assets/modernizr.js"></script>
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="body">
+        
+        <%= render 'shared/header' %>
+
+<div class="container">
+    <h2 class="block_title">Services</h2>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="services">
+                <div class="service-wrap">    
+                    <i class="pe-7s-science pe-dj pe-va"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, commodi.</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="services">
+                <div class="service-wrap">
+                    <i class="pe-7s-monitor pe-dj pe-va"></i>
+                    <h3>Brand Identity</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, commodi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="services">
+                <div class="service-wrap">
+                    <i class="pe-7s-edit pe-dj pe-va"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, commodi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="services">
+                <div class="service-wrap">
+                    <i class="pe-7s-config pe-dj pe-va"></i>
+                    <h3>eCommerce Soultion</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, commodi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section><!-- services -->
+
+<!-- Portfolio Area -->
+
+<section id="portfolio" class="portfolio-area">
+<div class="container">
+    <h2 class="block_title">My Works</h2>
+    <div class="row port cs-style-3">
+        <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+            <figure>
+                <%= image_tag('pic.png', class: 'background-image', alt:'Background')%>
+                <figcaption>
+                    <h3>Settings</h3>
+                    <span>Jacob Cummings</span>
+                    <a href="#" class="button" >Take a look</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+            <figure>
+                <%= image_tag('5.png', class: 'background-image', alt:'Background')%>
+                <figcaption>
+                    <h3>Camera</h3>
+                    <span>Jacob Cummings</span>
+                    <a href="#" class="button" >Take a look</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+            <figure>
+                <%= image_tag('4.png', class: 'background-image', alt:'Background')%>
+                <figcaption>
+                    <h3>Music</h3>
+                    <span>Jacob Cummings</span>
+                    <a href="#" class="button" >Take a look</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+            <figure>
+                <%= image_tag('3.png', class: 'background-image', alt:'Background')%>
+                <figcaption>
+                    <h3>Settings</h3>
+                    <span>Jacob Cummings</span>
+                    <a href="#" class="button" >Take a look</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+            <figure>
+                <%= image_tag('2.png', class: 'background-image', alt:'Background')%>
+                <figcaption>
+                    <h3>Camera</h3>
+                    <span>Jacob Cummings</span>
+                    <a href="#" class="button" >Take a look</a>
+                </figcaption> 
+            </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+            <figure>
+                <%= image_tag('1.png', class: 'background-image', alt:'Background')%>
+                <figcaption>
+                    <h3>Music</h3>
+                    <span>Jacob Cummings</span>
+                    <a href="#" class="button" >Take a look</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-xs-12">
+            <div class="btn-center"><a href="#" class="big button">View all</a></div>
+        </div>
+    </div>
+</div><!-- container -->
+</section><!-- portfolio -->
+
+<!-- Testimonial Area -->
+
+<section id="testimonial" class="testimonial-area">
+<div class="container">
+    <h2 class="block_title">Testimonials</h2>
+    <div class="row">
+        <div class="col-xs-12">
+        </div>
+        <div id="testimonial-container" class="col-xs-12">
+            <div class="testimonila-block">
+               <%= image_tag('testimonial.jpg', class: 'background-image', alt:'Background')%>
+                <p>I got Darren on board for the development of the website for a startup in partnership with one of the biggests Italian VC, off-shore a project is never that easy especially for a project like that because it required complex backend and frontend development but what impressed me, apart from their RoR skills adn knowledge, is that they have always been committed to meet the project requirements, both in terms of timeline, budget and quality, so at the end it has revealed the best choice to work with them.</p>
+                <strong>Monir Hossain</strong>
+                <br>
+                <small>C.E.O</small>
+            </div>
+            <div class="testimonila-block">
+                <%= image_tag('testimonial2.jpg', class: 'background-image', alt:'Background')%>
+                <p>In addition to the technical expertise, Darren comes across as a team with thinking brains. Throughout the development lifecycle, I have seen them getting their heads around to deliver an enhanced functionality, which at times meant increased complexity and incremental developmental efforts. I am impressed with their degree of involvement and proactive approach to conceive solutions.</p>
+                <strong>Rachel Robinson</strong>
+                <br>
+                <small>Project Manager</small>
+            </div>
+            <div class="testimonila-block">
+                <%= image_tag('testimonial3.jpg', class: 'background-image', alt:'Background')%>
+                <p>I couldn't be happier with my choice of using Web Design Enterprise for my new website. Their team were easy to work with and helped me make a terrific website in a short amount of time.
+
+Thanks again guys for all your hard work I will recommend you to all my friends!</p>
+                <strong>John Lovant</strong>
+                <br>
+                <small>Developer</small>
+            </div>
+        </div>
+    </div>
+</div><!-- container -->
+</section><!-- testimonial -->
+
+<!-- Contact Area -->
+
+<section id="contact" class="mapWrap">
+<div id="googleMap" style="width:100%;"></div>
+<div id="contact-area">
+    <div class="container">
+        <h2 class="block_title">Hey !!!</h2>
+        <div class="row">
+            <div class="col-xs-12">
+            </div>
+            <div class="col-sm-6">
+                <div class="moreDetails">
+                    <h2 class="con-title">More About me</h2>
+                    <p> My professional experience includes designing and crafting code for various web functions and then testing the resulting code to meet client needs. I also have experience working in a collaborative environment and presenting status updates to project stakeholders.
+
+Here are further highlights of my qualifications and professional achievements:
+
+Continuing Education: Bachelor’s degree in Computer Programming from Grand Canyon University
+Experience using HTML5, CSS3, Heroku, PostgreSQL, Git, and Javascript to code a variety of web functions for different clients
+Document and analyze client communication
+Successful Ruby on Rails Developer
+
+My passion for designing useful and appealing software is what drives me to pursue my freelance career, and my eye for design and user-driven approach to development makes me an ideal candidate for your project.  </p>
+                    <ul class="address">
+                        <li><i class="pe-7s-map-marker"></i><span>Las Vegas Strip, Las Vegas, NV,<br>United States</span></li>
+                        <li><i class="pe-7s-mail"></i><span>Darrensoftdev@gmail.com</span></li>
+                        <li><i class="pe-7s-phone"></i><span>702-787-6726</span></li>
+                        <li><i class="pe-7s-global"></i><span><a href="http://wwww.DarrensoftDev.com">www.DarrenSoftDeveloper.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h2 class="con-title">Drop us a line</h2>
+                <form role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="user_name" placeholder="Enter your name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="your_email" placeholder="Enter your email">
+                  </div>
+                  <div class="form-group">
+                    <textarea name="InputMessage" id="user_message" class="form-control" rows="5" required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn medium">Let us know</button>
+                </form>   
+            </div>
+        </div>
+    </div><!-- container -->
+</div><!-- contact-area -->
+<div id="social">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="scoialinks">
+                    <li class="normal-txt">Find me on</li>
+                    <li class="social-icons"><a class="facebook" href="#"></a></li>
+                    <li class="social-icons"><a class="twitter" href="#"></a></li>
+                    <li class="social-icons"><a class="linkedin" href="#"></a></li>
+                    <li class="social-icons"><a class="google-plus" href="#"></a></li>
+                    <li class="social-icons"><a class="wordpress" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div><!-- social -->
+        	
+
+        	<% yield %>
+  
+        <%= render 'shared/footer' %>
+
+		<script src="assets/jquery-2.1.3.min.js"></script>
+        <script src="assets/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="assets/jquery.actual.min.js"></script>
+        <script src="assets/smooth-scroll.js"></script>
+        <script src="assets/owl.carousel.js"></script>
+        <script src="assets/script.js"></script>     
+
+
   </body>
 </html>
